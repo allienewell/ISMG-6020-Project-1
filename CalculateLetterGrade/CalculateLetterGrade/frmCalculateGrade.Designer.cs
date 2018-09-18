@@ -62,6 +62,7 @@
             this.txtNumberGrade.Name = "txtNumberGrade";
             this.txtNumberGrade.Size = new System.Drawing.Size(65, 22);
             this.txtNumberGrade.TabIndex = 1;
+            this.txtNumberGrade.TextChanged += new System.EventHandler(this.txtNumberGrade_TextChanged);
             // 
             // txtLetterGrade
             // 
@@ -76,35 +77,37 @@
             // 
             this.btnCalculate.Location = new System.Drawing.Point(33, 110);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.Size = new System.Drawing.Size(103, 23);
             this.btnCalculate.TabIndex = 2;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(153, 110);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(93, 23);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // Form1
+            // frmCalculateGrade
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(324, 175);
+            this.ClientSize = new System.Drawing.Size(390, 175);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtLetterGrade);
             this.Controls.Add(this.txtNumberGrade);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmCalculateGrade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculate Letter Grade";
             this.ResumeLayout(false);
